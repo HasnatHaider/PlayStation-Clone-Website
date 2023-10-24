@@ -1,0 +1,1175 @@
+@import url('http://fonts.cdnfonts.com/css/sst');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.logo{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 40%;
+    /*padding-top: 10px;*/
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+}
+
+.nav-list{
+    width: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 15px 20px
+}
+
+.nav-list li a{
+    font-family: 'SST', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-list li a{
+    transition: all 0.10s ease 0s;
+}
+
+.nav-list li a:hover{
+    color: blue;
+}
+
+.rightnav{
+    background-color: white;
+    width: 50%;
+    text-align: right;
+    padding: 11px 0px 11px 0px;
+}
+
+.btn{
+    margin-right: 34px;
+    font-family: 'SST', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: whitesmoke;
+    /*padding: 9px 25px; ---> it's not the right values to set*/
+    background-color: black;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    padding: 3px 10px 5px 10px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.8) url(../img/header24.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 85vh;
+}
+
+/*if i want to try it later
+.firstsection{
+    height: 100vh;
+}*/
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-family: 'SST', sans-serif;
+    /*font-weight: 300;*/
+    max-width: 80%;
+    margin: auto;
+    height: 100%;
+}
+
+.firsthalf{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 130px;
+}
+
+.secondhalf{
+    width: 30%;
+}
+
+/*.secondhalf img{
+    width: 100%;
+    /*padding-top: 100px;
+}*/
+
+.text-big{
+    font-family: 'SST', sans-serif;
+    font-size: 35px;
+    font-weight: lighter;
+    color: black;
+    padding-bottom: 25px;
+    letter-spacing: 0.1rem;
+}
+
+.text-small{
+    font-family: 'SST', sans-serif;
+    font-size: 13px;
+    font-weight: lighter;
+    color: black;
+    padding-bottom: 25px;
+    letter-spacing: 0.1em;
+}
+
+.btn-sm{
+    font-family: 'SST', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+    background-color: orangered;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    padding: 3px 10px 5px 10px;
+    cursor: pointer;
+    letter-spacing: 00.1em;
+}
+
+.btn-sm:hover{
+    background-color: rgba(240, 67, 4, 0.8);
+}
+
+.secondsection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    /*margin-left: 15px; it will cause some problems*/
+    margin-bottom: 35px;
+}
+
+.button-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.btn-sm1{
+    background: url(../img/header1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-right: 10px;
+    height: 100px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    color: transparent;
+    /*transition: all 0.3s ease 0s; -----> Don't want to use this values here*/
+    transition: transform 0.25s;
+}
+
+.btn-sm1:hover{
+    transform: translateY(-0.25rem);
+    box-shadow: 0 1rem 1rem 0 #5d6d7e6e;
+}
+
+.btn-sm2{
+    background: url(../img/header2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-right: 10px;
+    height: 100px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    color: transparent;
+    transition: transform 0.25s;
+}
+
+.btn-sm2:hover{
+    transform: translateY(-0.25rem);
+    box-shadow: 0 1rem 1rem 0 #e5996688;
+}
+
+.btn-sm3{
+    background: url(../img/horizon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-right: 10px;
+    height: 100px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    color: transparent;
+    transition: transform 0.25s;
+}
+
+.btn-sm3:hover{
+    transform: translateY(-0.25rem);
+    box-shadow: 0 1rem 1rem 0 #3498db74;
+}
+
+.btn-sm4{
+    background: url(../img/header5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-right: 10px;
+    height: 100px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    color: transparent;
+    transition: transform 0.25s;
+}
+
+.btn-sm4:hover{
+    transform: translateY(-0.25rem);
+    box-shadow: 0 1rem 1rem 0 #c03a2b83 ;
+}
+
+.btn-sm5{
+    background: url(../img/ghost.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    /*margin-right: 34px; ----> did'nt need to set the margin here*/
+    height: 100px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    color: transparent;
+    transition: transform 0.25s;
+}
+
+.btn-sm5:hover{
+    transform: translateY(-0.25rem);
+    box-shadow: 0 1rem 1rem 0 #85929e80;
+}
+
+.thirdsection{
+    margin-bottom: 50px;
+}
+
+.background1{
+    background: rgba(0, 0, 0, 0.8) url(../img/Cheader11.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.box-main1{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-family: 'SST', sans-serif;
+    width: 100%;
+    padding-top: 40px;
+}
+
+.textbig1{
+    font-family: 'SST', sans-serif;
+    font-size: 30px;
+    font-weight: lighter;
+    color: white;
+}
+
+.textbig2{
+    font-family: 'SST', sans-serif;
+    font-size: 35px;
+    font-weight: 900;
+    color: white;
+    padding-bottom: 35px;
+    letter-spacing: 2px;
+}
+
+.textsmall1{
+    font-family: 'SST', sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    color: white;
+    padding-bottom: 35px;
+    letter-spacing: 0.1em;
+}
+
+.btn1{
+    font-family: 'SST', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    padding: 3px 10px 5px 10px;
+    cursor: pointer;
+}
+
+.btn1:hover{
+    background-color: rgba(228, 228, 228, 0.8);
+}
+
+.button-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.card-1{
+    background: url(../img/card1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-right: 70px;
+    height: 200px;
+    width: 350px;
+    border: none;
+    border-radius: 20px;
+    color: transparent;
+    transition: transform 0.25s;
+}
+
+.card-1:hover{
+    transform: translateY(-0.45rem);
+    box-shadow: 0 1rem 1rem 0 #85929e36;
+}
+
+.card-2{
+    background: url(../img/card3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-right: 70px;
+    height: 200px;
+    width: 350px;
+    border: none;
+    border-radius: 20px;
+    color: transparent;
+    transition: transform 0.25s;
+}
+
+.card-2:hover{
+    transform: translateY(-0.45rem);
+    box-shadow: 0 1rem 1rem 0 #85929e36;
+}
+
+.card-3{
+    background: url(../img/card2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 200px;
+    width: 350px;
+    border: none;
+    border-radius: 20px;
+    color: transparent;
+    transition: transform 0.25s;
+}
+
+.card-3:hover{
+    transform: translateY(-0.45rem);
+    box-shadow: 0 1rem 1rem 0 #85929e36;
+}
+
+.span-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.span1{
+    font-family: 'SST', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    color: white;
+    margin: auto;
+    padding-right: 30px;
+    letter-spacing: 1px;
+}
+
+.span2{
+    font-family: 'SST', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    color: white;
+    margin: auto;
+    letter-spacing: 1px;
+}
+
+.span3{
+    font-family: 'SST', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    color: white;
+    margin: auto;
+    letter-spacing: 1px;
+}
+
+.fourthsection{
+    margin-bottom: 50px;
+}
+
+.box-main2{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.text1{
+    font-family: 'SST', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    color: rgb(0, 57, 201);
+    letter-spacing: 3px;
+}
+
+.textbig3{
+    font-family: 'SST', sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.textsmall2{
+    font-family: 'SST', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 1px;
+    color: rgba(61, 61, 61, 0.892);
+}
+
+.fifthsection{
+    margin-bottom: 50px;
+}
+
+.box-main3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10%;
+}
+
+.textbig4{
+    font-family: 'SST', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    color: rgb(34, 34, 34);
+    padding-bottom: 30px;
+}
+
+.textsmall3{
+    font-family: 'SST', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: rgba(61, 61, 61, 0.892);
+}
+
+.button-4{
+    padding-top: 30px;
+}
+
+.btn2{
+    font-family: 'SST', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    background-color: rgba(0, 60, 255, 0.8);
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    padding: 3px 10px 5px 10px;
+    cursor: pointer;
+}
+
+.btn2:hover{
+    background-color: rgb(0, 39, 169);
+}
+
+.playstationimg{
+    width: 50%;
+}
+
+.playstationimg img{
+    width: 80%;
+}
+
+.sixthsection{
+    /*margin-bottom: 50px;*/
+}
+
+.background2{
+    background: url(../img/header20.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+
+.main-box4{
+    display: grid;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 10%;
+    padding-left: 10%;
+}
+
+.main-box4 img{
+    width: 50%;
+}
+
+.textbig5{
+    font-family: 'SST', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.textsmall4{
+    font-family: 'SST', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    color: white;
+}
+
+.button-5{
+    padding-top: 20px;
+}
+
+.btn3{
+    font-family: 'SST', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    background-color: orangered;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    padding: 3px 10px 5px 10px;
+    cursor: pointer;
+}
+
+.btn3:hover{
+    background-color: rgba(240, 67, 4, 0.8);
+}
+
+/*.seventhsection{
+    margin-bottom: 50px;
+} ----> Will you use it latter if i want to*/ 
+
+.background3{
+    background: url(../img/header27.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.main-box5{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding-top: 40px;
+}
+
+.textsmall5{
+    font-family: 'SST', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.text-small5{
+    padding-top: 8px;
+    font-family: 'SST', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.button-6{
+    margin-top: 40px;
+}
+
+.card-4{
+    background: url(../img/game15.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 200px;
+    width: 170px;
+    border: none;
+    border-radius: 5px;
+    color: transparent;
+    transition: transform 0.30s;
+    margin-right: 30px;
+}
+
+.card-4:hover{
+    transform: scale(1.05);
+    box-shadow: 0 1rem 1rem 0 #85929e8a;
+}
+
+.card-5{
+    background: url(../img/game1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 200px;
+    width: 170px;
+    border: none;
+    border-radius: 5px;
+    color: transparent;
+    transition: transform 0.30s;
+    margin-right: 30px;
+}
+
+.card-5:hover{
+    transform: scale(1.05);
+    box-shadow: 0 1rem 1rem 0 #85929e8a;
+}
+
+.card-6{
+    background: url(../img/game4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 200px;
+    width: 170px;
+    border: none;
+    border-radius: 5px;
+    color: transparent;
+    transition: transform 0.30s;
+    margin-right: 30px;
+}
+
+.card-6:hover{
+    transform: scale(1.05);
+    box-shadow: 0 1rem 1rem 0 #85929e8a;
+}
+
+.card-7{
+    background: url(../img/game3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 200px;
+    width: 170px;
+    border: none;
+    border-radius: 5px;
+    color: transparent;
+    transition: transform 0.30s;
+    margin-right: 30px;
+}
+
+.card-7:hover{
+    transform: scale(1.05);
+    box-shadow: 0 1rem 1rem 0 #85929e8a;
+}
+
+.card-8{
+    background: url(../img/game11.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 200px;
+    width: 170px;
+    border: none;
+    border-radius: 5px;
+    color: transparent;
+    transition: transform 0.30s;
+    margin-right: 30px;
+}
+
+.card-8:hover{
+    transform: scale(1.05);
+    box-shadow: 0 1rem 1rem 0 #85929e8a;
+}
+
+.second-card-row{
+    margin-top: 50px;
+}
+
+.card-9{
+    background: url(../img/game5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 200px;
+    width: 170px;
+    border: none;
+    border-radius: 5px;
+    color: transparent;
+    transition: transform 0.30s;
+    margin-right: 30px;
+}
+
+.card-9:hover{
+    transform: scale(1.05);
+    box-shadow: 0 1rem 1rem 0 #85929e8a;
+}
+
+.card-10{
+    background: url(../img/game6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 200px;
+    width: 170px;
+    border: none;
+    border-radius: 5px;
+    color: transparent;
+    transition: transform 0.30s;
+    margin-right: 30px;
+}
+
+.card-10:hover{
+    transform: scale(1.05);
+    box-shadow: 0 1rem 1rem 0 #85929e8a;
+}
+
+.card-11{
+    background: url(../img/game7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 200px;
+    width: 170px;
+    border: none;
+    border-radius: 5px;
+    color: transparent;
+    transition: transform 0.30s;
+    margin-right: 30px;
+}
+
+.card-11:hover{
+    transform: scale(1.05);
+    box-shadow: 0 1rem 1rem 0 #85929e8a;
+}
+
+.card-12{
+    background: url(../img/game8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 200px;
+    width: 170px;
+    border: none;
+    border-radius: 5px;
+    color: transparent;
+    transition: transform 0.30s;
+    margin-right: 30px;
+}
+
+.card-12:hover{
+    transform: scale(1.05);
+    box-shadow: 0 1rem 1rem 0 #85929e8a;
+}
+
+.card-13{
+    background: url(../img/game9.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 200px;
+    width: 170px;
+    border: none;
+    border-radius: 5px;
+    color: transparent;
+    transition: transform 0.30s;
+    margin-right: 30px;
+}
+
+.card-13:hover{
+    transform: scale(1.05);
+    box-shadow: 0 1rem 1rem 0 #85929e8a;
+}
+
+.nba{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.nba-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nbaimg{
+    width: 50%;
+}
+
+.nbaimg img{
+    width: 80%;
+    padding-left: 120px;
+}
+
+.main-n{
+    width: 50%;
+}
+
+.textnba{
+    font-family: 'SST', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    color: black;
+    padding-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.textnba1{
+    font-family: 'SST', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.816);
+    padding-bottom: 30px;
+}
+
+.specialsection{
+    background: url(../img/header28.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    margin-bottom: 50px;
+}
+
+.mainspecial{
+    display: flex;
+    flex-direction: column;
+    font-family: 'SST', sans-serif;
+    padding-left: 70px;
+    padding-top: 100px;
+}
+
+.sp1{
+    font-size: 30px;
+    font-weight: 300;
+    color: black;
+    padding-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.sp2{
+    font-size: 15px;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.816);
+    letter-spacing: 1px;
+}
+
+.sp{
+    padding-top: 30px;
+
+}
+
+.btn-n{
+    font-family: 'SST', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    background-color: orangered;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    padding: 3px 10px 5px 10px;
+    cursor: pointer;
+}
+
+.btn-n:hover{
+    background-color: rgba(240, 67, 4, 0.8);
+}
+
+.btn-sp{
+    font-family: 'SST', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    background-color: rgba(0, 60, 255, 0.8);
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    padding: 3px 10px 5px 10px;
+    cursor: pointer;
+}
+
+.btn-sp:hover{
+    background-color: rgb(0, 39, 169);
+}
+
+.eightsection{
+    margin-bottom: 50px;
+}
+
+.main-box6{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.textbig6{
+    text-align: center;
+    font-family: 'SST', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    color: black;
+    margin-bottom: 15px;
+    letter-spacing: 0.1rem;
+}
+
+.textsmall6{
+    text-align: center;
+    font-family: 'SST', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    text-align: center;
+    color: rgb(61, 61, 61);
+}
+
+.button-7{
+    margin-top: 50px;
+}
+
+.deal-1{
+    background: url(../img/service1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 350px;
+    width: 350px;
+    border: none;
+    border-radius: 15px;
+    color: transparent;
+    transition: transform 0.25s;
+    margin-right: 30px;
+}
+
+.deal-1:hover{
+    transform: translateY(-0.45rem);
+}
+
+.deal-2{
+    background: url(../img/service4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 350px;
+    width: 350px;
+    border: none;
+    border-radius: 15px;
+    color: transparent;
+    transition: transform 0.25s;
+    margin-right: 30px;
+}
+
+.deal-2:hover{
+    transform: translateY(-0.45rem);
+}
+
+.deal-3{
+    background: url(../img/service3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 350px;
+    width: 350px;
+    border: none;
+    border-radius: 15px;
+    color: transparent;
+    transition: transform 0.25s;
+    margin-right: 30px;
+}
+
+.deal-3:hover{
+    transform: translateY(-0.45rem);
+}
+
+.ninthsection{
+    margin-bottom: 100px;
+}
+
+.background4{
+    background: url(../img/banner8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+.main-box7{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    padding-top: 75px;
+    color: white;
+}
+
+.textbig7{
+    font-family: 'SST', sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    padding-bottom: 35px;
+    letter-spacing: 0.1rem;
+}
+
+.textsmall7{
+    font-family: 'SST', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    padding-bottom: 35px;
+    letter-spacing: 1px;
+}
+
+.offer1{
+    padding-bottom: 34px;
+}
+
+.offer{
+    font-family: 'SST', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(0, 89, 255);
+    background-color: rgb(204, 194, 191);
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    padding: 3px 10px 5px 10px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.offer:hover{
+    background-color: rgb(228, 228, 228);
+}
+
+.current{
+    font-family: 'SST', sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    padding-bottom: 15px;
+    letter-spacing: 0.1rem;
+}
+
+.datetime{
+    font-family: 'SST', sans-serif;
+}
+
+.date{
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.time{
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.ten{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.ten1{
+    text-align: center;
+    font-family: 'SST', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.816);
+}
+
+.flogo{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.insta{
+    width: 100px;
+    padding-right: 50px;
+    cursor: pointer;
+    transition: all 0.50s ease 0s;
+}
+
+.insta:hover{
+    transform: translateY(-0.25rem);
+}
+
+.twit{
+    width: 100px;
+    padding-right: 50px;
+    cursor: pointer;
+    transition: all 0.50s ease 0s;
+}
+
+.twit:hover{
+    transform: translateY(-0.25rem);
+}
+
+.youtube{
+    width: 100px;
+    cursor: pointer;
+    transition: all 0.50s ease 0s;
+}
+
+.youtube:hover{
+    transform: translateY(-0.25rem);
+}
+
+.foot{
+    background-color: black;
+}
+
+.footertext{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'SST', sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+    color: white;
+    letter-spacing: 0.1em;
+}
